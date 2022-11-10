@@ -1,0 +1,121 @@
+/* 화면이 어느 정도 클 때 (PC) */
+body {
+    background-image: url("./BG.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+#container {
+    width: 70%;
+    height: 800px;
+    display: inline-flex;
+}
+
+#center-line {
+    width: 3px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.575);
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.185);
+    margin-top: 78px;
+    border-radius: 100%;
+}
+
+#picture {
+    width: 50%;
+    height: 90%;
+    background-image: url("./BG2.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin: 40px;
+}
+
+#login-form {
+    width: 50%;
+    height: 90%;
+    margin: 40px;
+    text-align: left;
+}
+
+#social-login-box {
+    width: 100%;
+    height: 60px;
+}
+
+#title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+#description {
+    font-size: 15px;
+}
+
+input {
+    width: 98%;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* 화면이 작을때 (스마트폰) */
+@media (max-width: 1000px) {
+    body {
+        background-size: auto;
+    }
+
+    #container {
+        width: 600px;
+    }
+
+    #picture {
+        display: none;
+    }
+
+    #login-form {
+        width: 100%;
+    }
+}
+
+
+/* 부가적 디자인 요소 */
+.white-transparent-background {
+    background-color: rgba(255, 255, 255, 0.651);
+}
+
+.rounded-corner {
+    border-radius: 15px;
+}
+
+.full-rounded-corner {
+    border-radius: 2000px;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.185);
+}
+
+.empty {
+    height: 50px;
+}
+
+/* 소셜 로그인 버튼*/
+.google-color {
+    background-color: #fff;
+}
+
+.naver-color {
+    background-color: #19ce60;
+}
+
+.kakao-color {
+    background-color: #edd700;
+}
+
+.github-color {
+    background-color: #000;
+}
+
+.social-login-text {
+    text-align: center;
+    font-size: 18px;
+}
